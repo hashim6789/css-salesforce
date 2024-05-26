@@ -401,63 +401,63 @@
 
 /* Skill Section */
 #skill-section {
-  height: 880px;
+  min-height: 880px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #skill-panel {
-  height: 790px;
-  width: 1280px;
+  min-height: 790px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 #skill-head-block {
-  height: 128px;
-  width: 840px;
+  min-height: 128px;
+  max-width: 840px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 #skill-head-title {
-  height: 48px;
+  max-height: 48px;
   width: 100%;
-  font-size: 40px;
-  font-weight: bold;
 }
 #skill-head-text {
-  height: 56px;
-  width: 728px;
+  max-height: 56px;
+  max-width: 728px;
+  width: 100%;
   font-size: 18px;
   color: #181818;
 }
 #skill-card-block {
-  height: 452px;
+  min-height: 452px;
   width: 100%;
-  padding-bottom: 32px;
+  padding-bottom: 0 12px 32px 12px;
   display: flex;
   justify-content: space-between;
 }
 .skill-card {
-  height: 402px;
-  width: 334px;
+  max-height: 402px;
+  max-width: 334px;
   padding: 24px;
   display: flex;
   flex-direction: column;
+  margin: 12px 12px;
   align-items: center;
   border: 2px solid gray;
   border-radius: 10px;
 }
 .skill-img {
-  height: 120px;
-  width: 120px;
+  max-height: 120px;
+  max-width: 120px;
 }
 .skill-details {
-  height: 224px;
+  min-height: 224px;
   width: 100%;
   background-color: #fff;
   display: flex;
@@ -467,7 +467,7 @@
   margin-top: 16px;
 }
 .module-btn {
-  height: 24px;
+  min-height: 24px;
   width: auto;
   background-color: #1ea7fd33;
   color: #032d60;
@@ -477,21 +477,21 @@
   padding: 5px 10px 5px 10px;
 }
 .skill-card-title {
-  height: 56px;
+  min-height: 56px;
   width: auto;
   font-weight: bold;
   font-size: 24px;
   word-spacing: 5px;
 }
 .skill-card-text {
-  height: 72px;
+  min-height: 72px;
   width: auto;
   font-size: 16px;
   color: #181818;
   word-spacing: 5px;
 }
 .skill-link-block {
-  height: 40px;
+  max-height: 40px;
   width: 100%;
   display: flex;
   justify-content: left;
@@ -757,5 +757,13 @@
   .product-card {
     flex: 1 1 100%;
     /* max-width: 100%; */
+  }
+  #skill-card-block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skill-card {
+    width: 100%;
+    max-width: 700px;
   }
 }
